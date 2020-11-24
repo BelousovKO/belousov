@@ -1,0 +1,43 @@
+:root {
+    --column-gap: 12px;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-gap: 2px;
+    background-color: white;
+    height: 80px;
+    border: 1px solid #b3d4fc;
+}
+
+.header-items{
+    position: relative;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 17px;
+    height: 80px;
+    padding-top: 10px;
+}
+
+.header-items span {
+    font-size: 14px;
+    font-weight: 500;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+}
+
+.nav-lincs,
+.nav-lincs:active,
+.nav-lincs:focus {
+    color: black;
+    text-decoration: none;
+}
