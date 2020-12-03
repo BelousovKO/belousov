@@ -6,56 +6,175 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Проект</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/filterStyle.css">
-    <link rel="stylesheet" href="css/catalogStyle.css">
-    <link rel="stylesheet" href="css/headerStyle.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/filterStyle.css">
+    <link rel="stylesheet" href="../css/catalogStyle.css">
+    <link rel="stylesheet" href="../css/headerStyle.css">
+    <link rel="stylesheet" href="../box/style.css">
 </head>
 <body>
+
+<div class="shadow-box"></div>
+<section class="section-box">
+
+    <header class="header-box">
+        <div class="h1-div">
+            <h1 class="h1-box">Ваша корзина</h1>
+        </div>
+        <a class="exit-div" href="../index.html" aria-label="Выход">
+            <img src="../css/iconButton/cancel.svg" alt="Выход" class="exit">
+        </a>
+    </header>
+
+    <div class="main-box">
+
+        <aside class="all-menu">
+            <div class="check-all-div">
+                <label class="label">
+                    <input type="checkbox" class="checkbox">
+                    <span class="fake-checkbox"></span>
+                    <span class="del-all-checkbox">Выбрать всё</span>
+                </label>
+            </div>
+            <div class="del-all-div">
+                <a href="#" aria-label="Удалить всё">Удалить всё
+                    <img src="../css/iconButton/delete.svg" alt="Удалить всё" class="del-all">
+                </a>
+            </div>
+        </aside>
+
+        <div class="opacity-border-box"></div>
+
+        <aside class="row-items">
+            <div class="container-item">
+
+                <div class="info-item">
+
+                    <label class="label">
+                        <input type="checkbox" class="checkbox">
+                        <span class="fake-checkbox"></span>
+                    </label>
+                    <span class="photo-pet-span">
+                        <img src="../img/dog-1.png" alt="Фото питомца" class="photo-pet-box">
+                    </span>
+                </div>
+                <div class="bred-calc-div">
+                    <span class="breed-box">Айну</span>
+                    <div class="calk-container">
+                        <button class="calk" name="minus">-</button>
+                        <output name="quantity-breed" class="quantity-breed">1</output>
+                        <button class="calk" name="plus">+</button>
+                    </div>
+                </div>
+
+
+                <div class="del-item-div">
+                    <div class="price-del-item">
+                        <span class="price-box">12 000₽</span>
+                        <a href="#" aria-label="Удалить всё">
+                            <img src="../css/iconButton/delete.svg" alt="Удалить пвроду" class="del-item">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="opacity-border-box"></div>
+        </aside>
+
+        <aside class="row-items">
+            <div class="container-item">
+
+                <div class="info-item">
+
+                    <label class="label">
+                        <input type="checkbox" class="checkbox">
+                        <span class="fake-checkbox"></span>
+                    </label>
+                    <span class="photo-pet-span">
+                        <img src="../img/dog-2.png" alt="Фото питомца" class="photo-pet-box">
+                    </span>
+                </div>
+                <div class="bred-calc-div">
+                    <span class="breed-box">Афганская борзая</span>
+                    <div class="calk-container">
+                        <button class="calk" name="minus">-</button>
+                        <output name="quantity-breed" class="quantity-breed">1</output>
+                        <button class="calk" name="plus">+</button>
+                    </div>
+                </div>
+
+
+                <div class="del-item-div">
+                    <div class="price-del-item">
+                        <span class="price-box">15 000₽</span>
+                        <a href="#" aria-label="Удалить всё">
+                            <img src="../css/iconButton/delete.svg" alt="Удалить пвроду" class="del-item">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="opacity-border-box"></div>
+        </aside>
+
+        <footer>
+            <div class="summary-info">
+                <span class="total-amount">2 товара на сумму</span>
+                <span class="total-price">27 000₽</span>
+            </div>
+            <a class="a-order" href="../order/order.html">
+                <button class="order"><span>Оформить заказ</span></button>
+            </a>
+        </footer>
+
+    </div>
+
+</section>
+
 
 <header>
     <div class="logo">
         <a href="index.html">
-            <img class="icon" src="css/iconButton/logo.svg" alt="Логотип">
+            <img class="icon" src="../css/iconButton/logo.svg" alt="Логотип">
         </a>
     </div>
     <a href="catalog.html" class="inCatalog" aria-label="В каталог">
         <button class="catalog">
-            <img class="icon" src="css/iconButton/threeLine.svg" alt="Бургер">
+            <img class="icon" src="../css/iconButton/threeLine.svg" alt="Бургер">
             <span>Каталог</span>
         </button>
     </a>
     <div class="search">
         <label for="input-search" class="label-search">
             <input name="search" id="input-search" type="text" required>
-            <span class="placeholder"><img src="css/iconButton/search.svg" alt="Лупа"> Поиск</span>
-            <span class="placeholder-table-version"><img src="css/iconButton/search.svg" alt="Лупа"> Поиск</span>
+            <span class="placeholder"><img src="../css/iconButton/search.svg" alt="Лупа"> Поиск</span>
+            <span class="placeholder-table-version"><img src="../css/iconButton/search.svg" alt="Лупа"> Поиск</span>
             <button class="button-search">
                 <span>Найти</span>
             </button>
         </label>
     </div>
-    <a href="mobilMenu.html" class="inCatalog-mobile" aria-label="В каталог">
+    <a href="../mobilMenu.html" class="inCatalog-mobile" aria-label="В каталог">
         <button class="catalog">
-            <img class="icon" src="css/iconButton/threeLine.svg" alt="Бургер">
+            <img class="icon" src="../css/iconButton/threeLine.svg" alt="Бургер">
             <span>Каталог</span>
         </button>
     </a>
     <nav class="nav-header">
         <a href="#">
-            <img class="icon" src="css/iconButton/bonus.svg" alt="Бонусы">
+            <img class="icon" src="../css/iconButton/bonus.svg" alt="Бонусы">
             <span>Бонусы</span>
         </a>
         <a href="#">
-            <img class="icon" src="css/iconButton/box.svg" alt="Заказы">
+            <img class="icon" src="../css/iconButton/box.svg" alt="Заказы">
             <span>Заказы</span>
         </a>
         <a href="#">
-            <img class="icon" src="css/iconButton/promo.svg" alt="Акции">
+            <img class="icon" src="../css/iconButton/promo.svg" alt="Акции">
             <span>Акции</span>
         </a>
-        <a href="box/index.html" class="button-basket">
-            <img class="icon" src="css/iconButton/petHouse.svg" alt="Корзина">
+        <a href="../box/box.html" class="button-basket">
+            <img class="icon" src="../css/iconButton/petHouse.svg" alt="Корзина">
             <span>Корзина (5)</span>
         </a>
     </nav>
@@ -71,8 +190,8 @@
 
         <div class="opacity-border"></div>
 
-        <a class="mobile-filter-open" href="mobileFilter.html" aria-label="К фильтру">
-            <p class="p-filter"><img src="css/iconButton/filter.svg" alt="Фильтр"> Фильтр</p>
+        <a class="a-filter" href="../mobileFilter.html" aria-label="К фильтру">
+            <p class="p-filter"><img src="../css/iconButton/filter.svg" alt="Фильтр"> Фильтр</p>
         </a>
 
         <section class="base">
@@ -82,9 +201,6 @@
                     <h2 class="h2filter">Фильтр</h2>
                     <div class="section-form">
                         <h3 class="h3filter">Тип</h3>
-                        <a class="a-filter block-type" href="#">
-                        <img src="css/iconButton/closeSectionFilter.svg" alt="свернуть">
-                        </a>
                         <label class="label">
                             <input type="checkbox" class="checkbox">
                             <span class="fake-checkbox"></span>
@@ -108,11 +224,8 @@
                     </div>
                     <div class="section-form">
                         <h3 class="h3filter">Основные черты</h3>
-                        <a class="a-filter block-features" href="#">
-                        <img src="css/iconButton/closeSectionFilter.svg" alt="свернуть">
-                        </a>
                         <div class="fast-search-wrapper">
-                            <img class="search-icon" src="css/iconButton/search.svg" alt="Лупа">
+                            <img class="search-icon" src="../css/iconButton/search.svg" alt="Лупа">
                             <input type="text" class="fast-search" placeholder="Быстрый поиск">
                         </div>
                         <label class="label">
@@ -140,15 +253,10 @@
                             <span class="fake-checkbox"></span>
                             <span class="text">Очень преданная</span>
                         </label>
-                        <a href="" class="a-filter-all">Показать все</a>
+                        <a href="" class="a-filter">Показать все</a>
                     </div>
                     <div class="section-form-size">
-                        <a class="block-size a-filter" href="#">
-                            <img src="css/iconButton/closeSectionFilter.svg" alt="свернуть">
-                        </a>
                         <h3 class="h3filter">Размер</h3>
-
-
                         <label>От <input type="number" class="pet-size-input" value="11"></label>
                         <label>до <input type="number" class="pet-size-input" value="21"></label>
                     </div>
@@ -158,21 +266,9 @@
                 <div class="product-section item">
 
                     <div class="product-list__item">
-                        <a href="cards/card.html" class="container-product-item">
-                        <div class="img-div">
-                            <img src="img/dog-1.png" alt="Собака 1" class="img-pet">
-                        </div>
-                        <p class="breed">Айну</p>
-                        <p class="price">12 000₽</p>
-                        </a>
-                        <div class="item-button-box">
-                            <button class="inBox"><span>В корзину</span></button>
-                        </div>
-                    </div>
-                    <div class="product-list__item">
-                        <a href="cards/card.html" class="container-product-item">
+                        <a href="../cards/card.html" class="container-product-item">
                             <div class="img-div">
-                                <img src="img/dog-2.png" alt="Собака 1" class="img-pet">
+                                <img src="../img/dog-1.png" alt="Собака 1" class="img-pet">
                             </div>
                             <p class="breed">Айну</p>
                             <p class="price">12 000₽</p>
@@ -182,9 +278,9 @@
                         </div>
                     </div>
                     <div class="product-list__item">
-                        <a href="cards/card.html" class="container-product-item">
+                        <a href="../cards/card.html" class="container-product-item">
                             <div class="img-div">
-                                <img src="img/dog-3.png" alt="Собака 1" class="img-pet">
+                                <img src="../img/dog-2.png" alt="Собака 1" class="img-pet">
                             </div>
                             <p class="breed">Айну</p>
                             <p class="price">12 000₽</p>
@@ -194,9 +290,9 @@
                         </div>
                     </div>
                     <div class="product-list__item">
-                        <a href="cards/card.html" class="container-product-item">
+                        <a href="../cards/card.html" class="container-product-item">
                             <div class="img-div">
-                                <img src="img/dog-4.png" alt="Собака 1" class="img-pet">
+                                <img src="../img/dog-3.png" alt="Собака 1" class="img-pet">
                             </div>
                             <p class="breed">Айну</p>
                             <p class="price">12 000₽</p>
@@ -206,9 +302,9 @@
                         </div>
                     </div>
                     <div class="product-list__item">
-                        <a href="cards/card.html" class="container-product-item">
+                        <a href="../cards/card.html" class="container-product-item">
                             <div class="img-div">
-                                <img src="img/dog-5.png" alt="Собака 1" class="img-pet">
+                                <img src="../img/dog-4.png" alt="Собака 1" class="img-pet">
                             </div>
                             <p class="breed">Айну</p>
                             <p class="price">12 000₽</p>
@@ -218,9 +314,9 @@
                         </div>
                     </div>
                     <div class="product-list__item">
-                        <a href="cards/card.html" class="container-product-item">
+                        <a href="../cards/card.html" class="container-product-item">
                             <div class="img-div">
-                                <img src="img/dog-6.png" alt="Собака 1" class="img-pet">
+                                <img src="../img/dog-5.png" alt="Собака 1" class="img-pet">
                             </div>
                             <p class="breed">Айну</p>
                             <p class="price">12 000₽</p>
@@ -230,9 +326,9 @@
                         </div>
                     </div>
                     <div class="product-list__item">
-                        <a href="cards/card.html" class="container-product-item">
+                        <a href="../cards/card.html" class="container-product-item">
                             <div class="img-div">
-                                <img src="img/dog-7.png" alt="Собака 1" class="img-pet">
+                                <img src="../img/dog-6.png" alt="Собака 1" class="img-pet">
                             </div>
                             <p class="breed">Айну</p>
                             <p class="price">12 000₽</p>
@@ -242,9 +338,9 @@
                         </div>
                     </div>
                     <div class="product-list__item">
-                        <a href="cards/card.html" class="container-product-item">
+                        <a href="../cards/card.html" class="container-product-item">
                             <div class="img-div">
-                                <img src="img/dog-8.png" alt="Собака 1" class="img-pet">
+                                <img src="../img/dog-7.png" alt="Собака 1" class="img-pet">
                             </div>
                             <p class="breed">Айну</p>
                             <p class="price">12 000₽</p>
@@ -254,9 +350,9 @@
                         </div>
                     </div>
                     <div class="product-list__item">
-                        <a href="cards/card.html" class="container-product-item">
+                        <a href="../cards/card.html" class="container-product-item">
                             <div class="img-div">
-                                <img src="img/dog-9.png" alt="Собака 1" class="img-pet">
+                                <img src="../img/dog-8.png" alt="Собака 1" class="img-pet">
                             </div>
                             <p class="breed">Айну</p>
                             <p class="price">12 000₽</p>
@@ -266,9 +362,9 @@
                         </div>
                     </div>
                     <div class="product-list__item">
-                        <a href="cards/card.html" class="container-product-item">
+                        <a href="../cards/card.html" class="container-product-item">
                             <div class="img-div">
-                                <img src="img/dog-10.png" alt="Собака 1" class="img-pet">
+                                <img src="../img/dog-9.png" alt="Собака 1" class="img-pet">
                             </div>
                             <p class="breed">Айну</p>
                             <p class="price">12 000₽</p>
@@ -278,9 +374,9 @@
                         </div>
                     </div>
                     <div class="product-list__item">
-                        <a href="cards/card.html" class="container-product-item">
+                        <a href="../cards/card.html" class="container-product-item">
                             <div class="img-div">
-                                <img src="img/dog-11.png" alt="Собака 1" class="img-pet">
+                                <img src="../img/dog-10.png" alt="Собака 1" class="img-pet">
                             </div>
                             <p class="breed">Айну</p>
                             <p class="price">12 000₽</p>
@@ -290,9 +386,33 @@
                         </div>
                     </div>
                     <div class="product-list__item">
-                        <a href="cards/card.html" class="container-product-item">
+                        <a href="../cards/card.html" class="container-product-item">
                             <div class="img-div">
-                                <img src="img/dog-12.png" alt="Собака 1" class="img-pet">
+                                <img src="../img/dog-11.png" alt="Собака 1" class="img-pet">
+                            </div>
+                            <p class="breed">Айну</p>
+                            <p class="price">12 000₽</p>
+                        </a>
+                        <div class="item-button-box">
+                            <button class="inBox"><span>В корзину</span></button>
+                        </div>
+                    </div>
+                    <div class="product-list__item">
+                        <a href="../cards/card.html" class="container-product-item">
+                            <div class="img-div">
+                                <img src="../img/dog-12.png" alt="Собака 1" class="img-pet">
+                            </div>
+                            <p class="breed">Айну</p>
+                            <p class="price">12 000₽</p>
+                        </a>
+                        <div class="item-button-box">
+                            <button class="inBox"><span>В корзину</span></button>
+                        </div>
+                    </div>
+                    <div class="product-list__item">
+                        <a href="../cards/card.html" class="container-product-item">
+                            <div class="img-div">
+                                <img src="../img/dog-1.png" alt="Собака 1" class="img-pet">
                             </div>
                             <p class="breed">Айну</p>
                             <p class="price">12 000₽</p>
