@@ -132,6 +132,10 @@ table td {
 }
 
 @media (max-width: 639px) {
+  aside {
+    padding: 0 15px 27px 15px;
+  }
+
   .base-card {
     display: block;
   }
