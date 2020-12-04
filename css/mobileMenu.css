@@ -29,6 +29,9 @@
 
 .exit-mobile-menu {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 639px) {
