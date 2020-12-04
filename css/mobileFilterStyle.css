@@ -84,7 +84,7 @@ p img {
 
 @media (max-width: 639px) {
  .filter {
-   position: absolute;
+   position: fixed;
    width: 100%;
    top: 0;
    left:0;
@@ -93,6 +93,7 @@ p img {
    z-index: 3;
    background-color: rgba(0, 0, 0, 0.5);
    padding: 0;
+   overflow: auto;
  }
 
   .exit-filter-div {

@@ -10,12 +10,15 @@
 }
 
 .section-box {
-  position: absolute;
+  position: fixed;
   background: #FFFFFF;
   padding: 24px 40px;
   width: 658px;
   height: 100%;
   z-index: 5;
+  top: 0;
+  left: 0;
+  overflow: auto;
 }
 
 .shadow-box {
