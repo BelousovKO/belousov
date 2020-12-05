@@ -5,10 +5,6 @@
   font-family: Montserrat;
 }
 
-:root {
-  --yellow: #FBBA3C;
-}
-
 .section-box {
   position: fixed;
   background: #FFFFFF;
@@ -47,7 +43,6 @@ body .row-items {
 .all-menu {
   display: grid;
   grid-template-columns: 1fr auto;
-
 }
 
 .exit-div,
@@ -136,7 +131,7 @@ button {
 }
 
 .order {
-  background-color: var(--yellow);
+  background-color: #FBBA3C;
   border: 1px solid lightgray;
   height: 37px;
   width: 220px;
@@ -148,6 +143,11 @@ button {
 
 .order:active {
   background-color: #E19605;
+}
+
+.order span {
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .price-label {

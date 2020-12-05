@@ -1,11 +1,7 @@
-:root {
---yellow: #FBBA3C;
-}
-
 .p-filter {
   display: none;
   font-size: 16px;
-  color: var(--yellow);
+  color: #FBBA3C;
 }
 
 .h2filter,
@@ -57,7 +53,7 @@
 .a-filter-all,
 .mobile-filter-open{
   text-decoration: none;
-  color: var(--yellow)
+  color: #FBBA3C;
 }
 
 .fast-search {

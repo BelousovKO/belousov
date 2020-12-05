@@ -6,12 +6,6 @@
 }
 
 :root {
-    --light-color:#E5E5E5;
-    --yellow-color:#FBBA3C;
-    --dark-yellow-color:#FF9702;
-    --light-yellow-color:#FCD17D;
-    --silver-color:#F2F2F2;
-    --dark-silver-color:#C4C4C4;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -28,16 +22,16 @@ header input:focus {
     border: 0;
     outline: none;
     border-radius: 4px;
-    background-color: var(--yellow-color);
+    background-color: #FBBA3C;
     height: 45px;
 }
 
 button:hover {
-    background-color: var(--light-yellow-color);
+    background-color: #FCD17D;
 }
 
 button:active {
-    background-color: var(--dark-yellow-color);
+    background-color: #FF9702;
 }
 
 a {
@@ -81,8 +75,6 @@ header {
     display: none;
 }
 
-/* Search */
-
 .search {
     flex: 1;
     margin: 0 33px;
@@ -123,7 +115,7 @@ header {
     height: 45px;
     flex: 1;
     background-color: #ffffff;
-    border: 1px solid var(--yellow-color);
+    border: 1px solid #FBBA3C;
     width: calc(100% - 111px);
 }
 
@@ -135,8 +127,6 @@ header {
 .placeholder-table-version {
     display: none;
 }
-
-/*search end*/
 
 .nav-header {
     display: flex;
@@ -189,7 +179,7 @@ gap: 10px;
     }
 
     .search {
-        margin: 0 0 0 8px ;
+        margin-left: 8px ;
     }
 
     .button-search {
@@ -224,7 +214,7 @@ gap: 10px;
     }
 
     .search {
-        margin: 0 0 0 14px;
+        margin-left: 14px;
     }
 
     .nav-header {

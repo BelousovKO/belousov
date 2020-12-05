@@ -1,11 +1,7 @@
-:root {
---yellow: #FBBA3C;
-}
-
 .p-filter {
   display: none;
   font-size: 16px;
-  color: var(--yellow);
+  color: #FBBA3C;
 }
 
 .h2filter,
@@ -48,7 +44,7 @@
 
 .a-filter {
   text-decoration: none;
-  color: var(--yellow)
+  color: #FBBA3C;
 }
 
 p img {
@@ -99,7 +95,6 @@ p img {
   .exit-filter-div {
     display: grid;
     grid-template-columns: auto 1fr;
-
   }
 
   .filter-img {

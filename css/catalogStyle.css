@@ -4,10 +4,6 @@
     padding: 0;
 }
 
-:root {
-    --yellow: #FBBA3C;
-}
-
 .base {
     margin: 0 auto;
     min-height: calc(100vh - 80px);
@@ -28,7 +24,6 @@
     align-content: center;
     grid-template-columns: 50% 50%;
     padding: 0;
-
 }
 
 .pet-buttons {
@@ -46,7 +41,7 @@
 }
 
 .dog-button {
-    background-color: var(--yellow);
+    background-color: #FBBA3C;
     background-image: url(iconButton/buttonDog.svg);
 }
 
@@ -61,7 +56,6 @@ h1 {
     font-size: 32px;
     line-height: 39px;
     color: #000000;
-
 }
 
 @media (max-width: 639px) {
