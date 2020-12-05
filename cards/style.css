@@ -136,6 +136,10 @@ table td {
     padding: 0 15px 27px 15px;
   }
 
+  .img-pet {
+    max-width: 300px;
+  }
+
   .base-card {
     display: block;
   }
